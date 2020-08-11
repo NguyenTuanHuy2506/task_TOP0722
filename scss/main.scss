@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import 'functions_responsive.scss';
+@import 'assets/colors.scss';
+
+/*
+    * font-family
+    ? font-family: 'Noto Sans JP', sans-serif;
+    ? font-family: baron;
+    ? font-family: A1MinchoStdBold;
+*/
+
+/*  
+    ? mv
+*/
+.mv{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    //---- mv__container
+    &__container{
+        position: absolute;
+        top: 45%;
+        left: 7.5%;
+    }
+
+    //--- mv__title
+    &__title{
+        font-family: A1MinchoStdBold;
+        font-weight: bold;
+        font-size: 10rem;
+        color: #fff;
+        letter-spacing: .5rem;
+        text-shadow: 0 0 1rem rgba(#000, .6);
+
+        span{
+            font-size: 8.5rem;
+        }
+    }
+
+    &__description{
+        font-size: 3.2rem;
+        font-family: baron;
+        color: #fff;
+        text-shadow: 0 0 1rem rgba(#000, .6);
+        letter-spacing: 2rem;
+        text-indent: 1rem;
+        margin-top: 3rem;
+    }
+
+    &__img{
+        width: 100%;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+

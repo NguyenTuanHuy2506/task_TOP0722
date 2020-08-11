@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import 'functions_responsive.scss';
+@import 'assets/colors.scss';
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+    @media screen and (max-width: 768px) {
+        font-size: 1.4rem;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body>main {
+    -ms-overflow-x: hidden;
+}
+
+@supports (-ms-ime-align: auto) {
+    body>main {
+        overflow: hidden;
+    }
+}
+
+/*
+    * font-family
+    ? font-family: 'Noto Sans JP', sans-serif;
+    ? font-family: baron;
+    ? font-family: A1MinchoStdBold;
+*/
+
+/*  
+    * entry button
+*/
+.entry{
+    width: 10%;
+    min-width: 20rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    outline: none !important;
+    font-size: 3rem;
+    font-family: baron;
+    color: #fff;
+
+    &.first-child{
+        background-color: $c-main-color;
+        border: .1rem solid $c-main-color;
+    }
+    
+    &.even-child{
+        background-color: $c-blue2;
+        border: .1rem solid $c-main-color;
+    }
+
+    span{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+}
+
+
+/*  
+    ?hambuger-button
+*/
+.hambuger-button{
+    width: 4.6rem;
+    height: 2.9rem;
+    position: relative;
+    border: 0;
+    outline: none !important;
+    background-color: transparent;
+    span{
+        width: 4.6rem;
+        height: .2rem;
+        background-color: $c-blue3;
+        position: absolute;
+        left: 0;
+        transition: all .3s ease;
+
+        &:nth-of-type(1){
+            top: 0;
+        }
+        &:nth-of-type(2){
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:nth-of-type(3){
+            bottom: 0;
+        }
+    }
+        
+    &.active{
+        span:nth-of-type(1){
+            transform: translateY(.9rem) rotate(45deg);
+        }
+        span:nth-of-type(2){
+            opacity: 0;
+        }
+        span:nth-of-type(3){
+            transform: translateY(-.9rem) rotate(-45deg);
+        }
+    }
+}
+
+
+/*  
+    ! all link
+*/
+.nav-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/*  
+    *
+    !
+    ?
+*/
+
+
+/*  
+    *
+    !
+    ?
+*/
+
+
+/*  
+    *
+    !
+    ?
+*/
+
+
+/*  
+    *
+    !
+    ?
+*/
+
+
+/*  
+    *
+    !
+    ?
+*/
+
+
+/*  
+    *
+    !
+    ?
+*/

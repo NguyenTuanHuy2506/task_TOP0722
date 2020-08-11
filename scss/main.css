@@ -1,0 +1,52 @@
+/*
+    * font-family
+    ? font-family: 'Noto Sans JP', sans-serif;
+    ? font-family: baron;
+    ? font-family: A1MinchoStdBold;
+*/
+/*  
+    ? mv
+*/
+.mv {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.mv__container {
+  position: absolute;
+  top: 45%;
+  left: 7.5%;
+}
+
+.mv__title {
+  font-family: A1MinchoStdBold;
+  font-weight: bold;
+  font-size: 10rem;
+  color: #fff;
+  letter-spacing: .5rem;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+}
+
+.mv__title span {
+  font-size: 8.5rem;
+}
+
+.mv__description {
+  font-size: 3.2rem;
+  font-family: baron;
+  color: #fff;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  letter-spacing: 2rem;
+  text-indent: 1rem;
+  margin-top: 3rem;
+}
+
+.mv__img {
+  width: 100%;
+}
+
+.mv__img img {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

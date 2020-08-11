@@ -1,0 +1,9 @@
+{
+    "breadcrumbs.filePath": "off",
+    "emmet.excludeLanguages": [
+
+        "markdown"
+    ],
+    "editor.codeActionsOnSave": null,
+    "editor.colorDecorators":false
+}

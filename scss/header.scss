@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import 'functions_responsive.scss';
+@import 'assets/colors.scss';
+
+
+/*
+    * font-family
+    ! font-family: 'Noto Sans JP', sans-serif;
+    ! font-family: baron;
+    ! font-family: A1MinchoStdBold;
+-------------*/
+
+/*
+    ? header
+-------------*/
+.header{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 13.2rem;
+    z-index: 1030;
+
+    &__logo{
+        width: 10%;
+        min-width: 31.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        margin-right: auto;
+        position: relative;
+
+        img{
+            width: 100%;
+            max-width: 20.5rem;
+        }
+
+        span{
+            font-size: 1.6rem;
+            font-family: baron;
+            color: $c-main-color;
+            margin-left: 5rem;
+            margin-top: .4rem;
+            letter-spacing: .25rem;
+        }
+    }
+
+    &__wrap{
+        display: flex;
+    }
+
+    &__button{
+        width: 10%;
+        min-width: 13.2rem;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__menu{
+        display: none;
+    }
+}
