@@ -10,21 +10,23 @@
 */
 
 /*  
-    ? mv
+    ?----- mv
 */
 .mv{
     width: 100%;
     overflow: hidden;
     position: relative;
 
-    //---- mv__container
+    //*----- mv__container
     &__container{
         position: absolute;
-        top: 45%;
-        left: 7.5%;
+        bottom: 0;
+        height: 21vw;
+        left: 8.125%;
+        z-index: 1;
     }
 
-    //--- mv__title
+    //*----- mv__title
     &__title{
         font-family: A1MinchoStdBold;
         font-weight: bold;
@@ -38,6 +40,7 @@
         }
     }
 
+    //*----- mv__description
     &__description{
         font-size: 3.2rem;
         font-family: baron;
@@ -48,12 +51,395 @@
         margin-top: 3rem;
     }
 
+    //*----- mv__img
     &__img{
         width: 100%;
+        position: relative;
+
+        &.obj-decoration__triangle{
+
+            &::before {
+                //!color border right
+                border-right-color: $c-blue3;
+
+            }
+            &::after {
+                //!color border right
+                border-right-color: rgba($c-blue-sp, $alpha: .8);
+                bottom: 0;
+            }
+        }
 
         img{
             width: 100%;
         }
     }
 }
+
+/*  
+    ?----- main page
+*/
+.main-page{
+    width: 100%;
+    // overflow: hidden;
+    position: relative;
+    .obj-decoration{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 57.375vw;
+
+        &__triangle{
+
+            &::before {
+                //!color border right
+                border-right-color: #b9be4f;
+
+            }
+            &::after {
+                //!color border right
+                border-right-color: rgba(#ebcc21, $alpha: .8);
+                bottom: 0;
+            }
+        }
+
+        &__triangle-1{
+
+        }
+    }
+}
+
+/*  
+    ?----- message
+*/
+.message{
+    width: 100%;
+    display: inline-flex;
+    margin-top: 13rem;
+
+    .obj-decoration--global{
+        position: absolute;
+        width: 100%;
+        max-width: 69rem;
+        top: 3.75vw;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        z-index: -1;
+        
+    }
+
+    &__container,
+    &__img{
+        width: 100%;
+        max-width: 50%;
+    }
+
+    &__container{
+        
+        .message__title{
+            color: $c-blue-main;
+            font-size: 2rem;
+            font-family: baron;
+        }
+
+        .message__sub-title{
+            margin-top: 2.3rem;
+            color: $c-blue-main;
+            font-weight: bold;
+            font-size: 3rem;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .message__wrap{
+            width: 100%;
+            max-width: 44rem;
+            margin-top: 2rem;
+            line-height: 3rem;    
+        }
+    }
+
+    &__img{
+        position: relative;
+        
+        img{
+            position: absolute;
+        }
+
+        &-01{
+            top: 4.5rem;
+            right: 18.6rem;
+        }
+
+        &-02{
+            top: 11.2rem;
+            right: 0;
+            transform: translateX(3.2rem);
+        }
+
+        &-03{
+            top: 26rem;
+            right: 22.4rem;
+        }
+
+    }
+}
+
+.message-view__wrap{
+    width: 100%;
+    text-align: center;
+}
+
+.message-view{
+    width: 100%;
+    display: inline-flex;
+    margin-top: 12rem;
+    padding: 0 4rem;
+
+    &__item0,
+    &__item1,
+    &__item2{
+        width: 100%;
+        max-width: 33%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        & > div{
+            width: 100%;
+            height: 19.8rem;
+            position: relative;
+            text-align: center;
+
+            
+            // img{
+            //     width: 100%;
+            // }
+
+            ul{
+                position: absolute;
+                display: inline-flex;
+                align-items: flex-end;
+                justify-content: center;
+                top: 50%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                transform: translateY(-50%);
+
+                &::after{
+                    content: '';
+                    width: 1rem;
+                    height: 1rem;
+                    background-color: rgba($color: #fff, $alpha: .4);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    border-radius: 50%;
+                    transform: translate(-50%, -50%);
+                    box-shadow: 0 0 2rem 5rem rgba($color: #fff, $alpha: .6);
+                    z-index: -1;
+                }
+            }
+        }
+
+    }
+
+    &__item0{
+
+        & > div{
+            
+            ul{
+                width: 7.9rem;
+                height: 10.6rem;
+                margin-top: 2rem;
+                
+                li{
+                    width: 1.6rem;
+                    background-color: $c-view-data;
+                }
+
+                li:nth-of-type(1){
+                    height: 5.3rem;
+                    margin-right: 1.6rem;
+                }
+
+                li:nth-of-type(2){
+                    height: 8.5rem;
+                    margin-right: 1.6rem;
+                }
+
+                li:nth-of-type(3){
+                    height: 10.6rem;
+                }
+                
+            }
+            
+        }
+    }
+
+    &__item1{
+
+        & > div{
+
+            ul{
+                color: $c-view-data;
+
+                li:nth-of-type(1){
+                    font-family: baron;
+                    font-size: 8rem;
+                    letter-spacing: .1rem;
+                }
+
+                li:nth-of-type(2){
+                    font-size: 3.1rem;
+                    font-weight: bold;
+                    margin-right: .5rem;
+                    font-family: 'Noto Sans JP', sans-serif;
+                }
+
+            }
+
+        }
+
+    }
+
+    &__item2{
+
+        & > div{
+
+            ul{
+                flex-direction: column;
+                color: $c-view-data;
+                align-items: center;
+
+                li:nth-of-type(1){
+                    font-family: baron;
+                    font-size: 8.55rem;
+                }
+
+                li:nth-of-type(2){
+                    font-size: 3.1rem;
+                    font-weight: bold;
+                    font-family: 'Noto Sans JP', sans-serif;
+                    margin-top: .5rem;
+                }
+
+            }
+
+        }
+    }
+
+    &__title{
+        font-size: 3.1rem;
+        font-weight: bold;
+        margin-top: 2rem;
+        color: $c-view-data;
+        text-align: center;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+}
+
+/*  
+    ?----- company
+*/
+.company{
+    width: 100%;
+    margin-top: 13rem;
+
+    & > ul{
+        display: flex;
+
+        li{
+            width: 100%;
+            max-width: 50%;
+        }
+
+        .company__img{
+            position: relative;
+
+            &::after{
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 5rem;
+                left: -5rem;
+                background: linear-gradient(90deg, rgba(58,153,237,1) 0%, rgba(54,112,196,1) 100%);
+                z-index: -1;
+            }
+
+            img{
+                width: 100%;
+                transform: translateX(-1rem);
+            }
+        }
+
+        .company__content{
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 11rem;
+
+        }
+    }
+    
+}
+
+/*  
+    ?----- work
+*/
+.work{
+    width: 100%;
+    text-align: center;
+    margin-top: 16rem;
+
+    & > ul{
+        width: 100%;
+        display: inline-flex;
+
+        li{
+            width: 100%;
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(#072548, .5);
+                z-index: 1;
+            }
+
+            img{
+                width: 100%;
+            }
+
+            label{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 2.5rem;
+                font-family: 'Noto Sans JP', sans-serif;
+                color: #fff;
+                z-index: 12;
+            }
+        }
+    }
+}
+
+
+/*  
+    ?----- mv
+*/
+
+
+
+/*  
+    ? mv
+*/
 

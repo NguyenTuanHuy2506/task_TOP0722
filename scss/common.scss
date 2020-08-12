@@ -38,7 +38,14 @@ body>main {
 */
 
 /*  
-    * entry button
+    ?------- another css
+*/
+.pad-r-3{
+    padding-right: 3rem;
+}
+
+/**
+*      ?------- entry button
 */
 .entry{
     width: 10%;
@@ -60,7 +67,7 @@ body>main {
     
     &.even-child{
         background-color: $c-blue2;
-        border: .1rem solid $c-main-color;
+        border: .1rem solid $c-blue2;
     }
 
     span{
@@ -71,8 +78,8 @@ body>main {
 }
 
 
-/*  
-    ?hambuger-button
+/* 
+    ?------- hambuger-button
 */
 .hambuger-button{
     width: 4.6rem;
@@ -116,7 +123,7 @@ body>main {
 
 
 /*  
-    ! all link
+    ? all link
 */
 .nav-link{
     position: absolute;
@@ -128,42 +135,97 @@ body>main {
 }
 
 /*  
-    *
-    !
-    ?
+    ?------- two triangle
 */
+.obj-decoration__triangle {
+
+    &::after,
+    &::before{
+        content: '';
+        width: 18.5625vw;
+        height: 36.875vw;
+        position: absolute;
+        right: 0;
+    }
+
+    &::before {
+        top: 0;
+        border-top: 0;
+        border-right: 18.5625vw solid transparent;
+        border-bottom: 36.875vw solid transparent;
+        border-left: 0;
+    }
+
+    &::after {
+       
+        border-bottom: 0;
+        border-right: 18.5625vw solid transparent;
+        border-top: 36.875vw solid transparent;
+        border-left: 0;
+    }
+}
 
 
 /*  
-    *
-    !
-    ?
+    ?------- class="f-comma"
 */
+.f-comma{
+    display: inline-block;
+    max-width: 1.2rem;
+}
 
 
 /*  
-    *
-    !
-    ?
+    ?------- view more button
 */
+.view-infor-button{
+    width: 100%;
+    max-width: 25.4rem;
+    height: 5.8rem;
+    outline: none !important;
+    border: 0;
+    background: linear-gradient(90deg, rgba(241,206,56,1) 0%, rgba(152,190,88,1) 100%);
+    color: #fff;
+    font-size: 1.6rem;
+    margin-top: 5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
 
 
 /*  
-    *
-    !
-    ?
+    ?------- heading
 */
-
+.heading{
+    font-size: 6rem;
+    font-family: baron;
+    color: $c-view-data;
+    display: flex;
+    flex-direction: column;
+}
+.sub-heading{
+    font-size: 2rem;
+    color: $c-view-data;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 2.5rem;
+}
 
 /*  
-    *
-    !
-    ?
+    ?------- text description
 */
-
+.p-description{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 3rem;
+}
 
 /*  
-    *
-    !
-    ?
+    ?------- a
+*/
+/*  
+    ?------- a
+*/
+/*  
+    ?------- a
 */
