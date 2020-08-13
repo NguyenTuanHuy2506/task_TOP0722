@@ -19,31 +19,32 @@
 
 	<!-- style -->
 	<style>
-		/* @font-face {
-			font-family: 'baron';
-			src: url(assets/plugins/fonts/BaronNeue.otf);
-		} */
 		@font-face {
 			font-family: 'A1MinchoStdBold';
 			src: url('assets/plugins/fonts/AMinchoStdBold.otf');
 		}
-		/* @font-face { */
-			/* font-family: 'A1MinchoStdBold'; */
-		/*	src: url('assets/plugins/fonts/AMinchoStdBold.otf');  /* IE 9 - 11 */
-    	/*	src: url('assets/plugins/fonts/AMinchoStdBold.eot?#iefix') format('embedded-opentype'), /* IE Fix for IE 6-8*/
-        /* 		url('assets/plugins/fonts/A1MinchoStdBold.woff') format('woff'); /* IE 9-11 & All Modern Browsers */
-		/*}*/
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			@font-face {
+				font-family: 'A1MinchoStdBold';
+				src: url('assets/plugins/fonts/yumin.eot');  /* IE 9 - 11 */
+				src: url('assets/plugins/fonts/yumin.eot?#iefix') format('embedded-opentype'), /* IE Fix for IE 6-8*/
+					url('assets/plugins/fonts/yumin.woff') format('woff'); /* IE 9-11 & All Modern Browsers */
+			} 
+		}
 		@font-face {
 			font-family: 'baron';
 			src: url('assets/plugins/fonts/BaronNeue.eot');  /* IE 9 - 11 */
     		src: url('assets/plugins/fonts/BaronNeue.eot?#iefix') format('embedded-opentype'), /* IE Fix for IE 6-8*/
          		url('assets/plugins/fonts/BaronNeue.woff') format('woff'); /* IE 9-11 & All Modern Browsers */
 		} 
+		
 	</style>
 	<!-- build:addcss -->
+	<link href="css/animate.css" rel="stylesheet">
 	<link href="scss/common.css" rel="stylesheet">
 	<link href="scss/header.css" rel="stylesheet">
 	<link href="scss/main.css" rel="stylesheet">
+	<link href="scss/footer.css" rel="stylesheet">
 
 
 	<title>Task 0722</title>
@@ -95,6 +96,8 @@
 		</div>
 
 	</header>
+
+	
 	<main>
 	<!-- build:content -->
 		<!-- build: mv -->
@@ -103,10 +106,10 @@
 			<!-- *mv mv__container -->
 			<div class="mv__container">
 
-				<h2 class="mv__title">
+				<h2 class="mv__title wow animated fadeInLeft">
 					未来<span>を</span>しかけよう!
 				</h2>
-				<p class="mv__description">
+				<p class="mv__description wow animated fadeInLeft" data-wow-delay=".2s">
 					LET'S STArT THE FuTurE
 				</p>
 
@@ -136,12 +139,12 @@
 
 					<div class="message__container">
 
-						<h3 class="message__title">recruit message</h3>
-						<p class="message__sub-title">
+						<h3 class="message__title wow animated fadeInLeft">recruit message</h3>
+						<p class="message__sub-title wow animated fadeInLeft">
 							この文章はダミーです。文字の大きさ<span class="f-comma pad-r-3">、</span>量<span class="f-comma">、</span class="f-comma">字間<span class="f-comma">、</span>行間等を確認するために入れています。
 						</p>
 
-						<ul class="message__wrap">
+						<ul class="message__wrap wow animated fadeInLeft">
 							<li>
 								この文章はダミーです。文字の大きさ<span class="f-comma">、</span>量<span class="f-comma">、</span>字間<span class="f-comma">、</span>行間等を確認するために入れています。この文章はダミーです。
 							</li>
@@ -159,7 +162,7 @@
 					</div>
 
 					<!-- *message message__img -->
-					<div class="message__img">
+					<div class="message__img wow animated fadeInRight">
 						<img class="message__img-01" src="images/img_message01.jpg" alt="recruit message">
 						<img class="message__img-02" src="images/img_message02.jpg" alt="recruit message">
 						<img class="message__img-03" src="images/img_message03.jpg" alt="recruit message">
@@ -172,7 +175,7 @@
 					
 					<ul class="message-view">
 
-						<li class="message-view__item0">
+						<li class="message-view__item0 wow animated fadeInLeft">
 
 							<div>
 								<img src="images/icon_view_circle.png" alt="東証一部上場企業">
@@ -185,7 +188,7 @@
 							<h4 class="message-view__title">東証一部上場企業</h4>
 
 						</li>
-						<li class="message-view__item1">
+						<li class="message-view__item1 wow animated fadeInLeft">
 
 							<div>
 								<img src="images/icon_view_circle2.png" alt="創業">
@@ -197,7 +200,7 @@
 							<h4 class="message-view__title">創業</h4>
 
 						</li>
-						<li class="message-view__item2">
+						<li class="message-view__item2 wow animated fadeInLeft">
 
 							<div>
 								<img src="images/icon_view_global.png" alt="海外展開">
@@ -220,13 +223,13 @@
 							<img src="images/img_company.jpg" alt="image company">
 						</li>
 						<li class="company__content">
-							<h2 class="heading">
+							<h2 class="heading wow animated fadeInLeft">
 								company
 								<span class="sub-heading">
 									会社情報
 								</span>
 							</h2>
-							<p class="p-description">
+							<p class="p-description wow animated fadeInLeft">
 								この文章はダミーです。文字の大きさ、量、字間、行間等を確認するため入れています。この文章はダミーです。
 							</p>
 							
@@ -237,7 +240,7 @@
 			</div>
 
 			<section class="work">
-				<h2 class="heading">
+				<h2 class="heading wow animated fadeInLeft">
 					work
 					<span class="sub-heading">仕事紹介</span>
 				</h2>
@@ -255,22 +258,231 @@
 						<label >管理・事務系</label>
 					</li>
 				</ul>
-				<button class="view-infor-button">仕事一覧を見る</button>
+
+				<button class="view-infor-button">
+					仕事一覧を見る
+				</button>
+
 			</section>
 
 			<section class="people">
-				
-				<div class="container">
+				<ul>
+					<li class="people__container">
+						<h2 class="heading wow animated fadeIn">
+							people
+							<span class="sub-heading">社員紹介</span>
+						</h2>
+						<button class="view-infor-button">
+							社員一覧を見る
+						</button>
 						
+					</li>
+					<li class="people__img">
+						<img src="images/img_people.jpg" alt="people image">
+					</li>
+				</ul>
+				<div class="container">
+					<ul class="people-round-table wow animated fadeInLeft">
+						<li class="image">
+							<img src="images/img_people2.jpg" alt="若手座談会">
+						</li>
+						<li class="content">
+							若手座談会
+						</li>
+					</ul>
 				</div>
+			</section>
 
+			<section class="working">
+				<div class="container">
+					<ul class="working__container">
+						<li>
+								<img src="images/img_people3.jpg" alt="働き方">
+								<h5>働き方</h5>
+						</li>
+						<li>
+								<img src="images/img_people4.jpg" alt="人財育成">
+								<h5>人財育成</h5>
+						</li>
+					</ul>
+				</div>
+				
+			</section>
+
+			<section class="recruit">
+				<div class="obj-decoration--cruit">
+					<img src="images/bg_recruit.png" alt="recruit">
+				</div>
+				<div class="container">
+					<h2 class="heading wow animated fadeInLeft">
+						recruit
+						<span class="sub-heading">
+							採用情報
+						</span>
+					</h2>
+					<ul class="apply">
+						<li>
+							<button class="active">募集要項</button>
+						</li>
+						<li>
+							<button>新卒</button>
+						</li>
+						<li>
+							<button>中途</button>
+						</li>
+					</ul>
+
+					<button class="view-infor-button">採用情報を見る</button>
+				</div>
+				
+			</section>
+
+			<section class="news">
+				<div class="obj-decoration--news"></div>
+
+				<div class="container">
+
+					<ul class="news-inner">
+
+						<li class="virtual-div">
+
+						</li>
+						<li>
+							<h2 class="heading wow animated fadeInLeft">
+								news
+								<span class="sub-heading">
+									採用情報
+								</span>
+							</h2>
+							<button class="view-infor-button">ニュース一覧</button>
+						</li>
+					</ul>
+
+					<div class="news-wrap">
+
+						<!-- list label to show or hide news-info -->
+						<ul class="virtual">
+
+							<li class="active">
+								<!-- all -->
+								all
+								<a class="nav-link label-group" data-sort="all" data-content="all" href="#">
+								</a>
+							</li>
+
+							<li>
+								<!-- notice -->
+								お知らせ
+								<a class="nav-link label-group" data-sort="notice" data-content="all" href="#">
+								</a>
+							</li>
+							<li>
+								<!-- new graduate -->
+								新卒
+								<a class="nav-link label-group" data-sort="new-graduate" data-content="all" href="#">
+								</a>
+							</li>
+							<li>
+								<!-- half way -->
+								中途
+								<a class="nav-link label-group" data-sort="half-way" data-content="all" href="#">
+								</a>
+							</li>
+							
+						</ul>
+
+						<ul class="news-list">
+
+							<li>
+								<!-- notice -->
+								<label class="news-label notice" data-content="お知らせ"></label>
+								<p class="day">2020.07.15</p>
+								<p class="p-description">この文章はダミーです。文字の大きさ、行間等を確認するために入れています。</p>
+							</li>
+
+							<li>
+								<!-- new graduate -->
+								<label class="news-label new-graduate" data-content="新卒"></label>
+								<p class="day">2020.07.15</p>
+								<p class="p-description">この文章はダミーです。文字の大きさ、行間等を確認するために入れています。</p>
+							</li>
+
+							<li>
+								<!-- half way -->
+								<label class="news-label half-way" data-content="中途"></label>
+								<p class="day">2020.07.15</p>
+								<p class="p-description">この文章はダミーです。文字の大きさ、行間等を確認するために入れています。</p>
+							</li>
+
+							<li>
+								<!-- notice -->
+								<label class="news-label notice" data-content="お知らせ"></label>
+								<p class="day">2020.07.15</p>
+								<p class="p-description">この文章はダミーです。文字の大きさ、行間等を確認するために入れています。</p>
+							</li>
+
+						</ul>
+					</div>
+				</div>
 			</section>
 
 		</section>
 	</main>
-	<footer>
+	<footer class="footer">
 	<!-- build:footer -->
+		<div class="footer__img">
+			<img src="images/img_footer.jpg" alt="未来をしかけよう!">
+		</div>
+		<div class="container">
+
+			<ul class="footer-inner">
+
+				<li class="footer-entry">
+					<h3>
+						<p class="h3-entry">entry</p>
+						未来<span>を</span>しかけよう!
+						<p class="h3-caption">LET'S STArT THE FuTurE</p>
+					</h3>
+
+					<button class="footer-button">
+						<span>
+							新卒
+						</span>
+						entry
+					</button>
+
+					<button class="footer-button mar-l-2">
+						<span>
+							中途
+						</span>
+						entry
+					</button>
+				</li>
+
+			</ul>	
+
+		</div>
+
+		<div class="footer-end-page">
+			<div class="container">
+				<ul>
+					<li>
+						プランバシーポリシー
+						<a class="nav-link" href="#link"></a>
+					</li>
+					<li class="mar-l-5">
+						サイトマップ
+						<a class="nav-link" href="#link"></a>
+					</li>
+					<li>
+						© 2020 SHOFU INC. All rights reserved.
+					</li>
+				</ul>
+			</div>
+			
+		</div>
 	</footer>
+	<a class="to-top-button animated bounceInUp"><span></span><span></span></a>
 	<script src="assets/js/jquery-2.2.4.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/index.js"></script>
