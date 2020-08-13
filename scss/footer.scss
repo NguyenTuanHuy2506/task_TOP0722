@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import 'functions_responsive.scss';
+@import 'assets/colors.scss';
+
+/*
+    * font-family
+    ? font-family: 'Noto Sans JP', sans-serif;
+    ? font-family: baron;
+    ? font-family: A1MinchoStdBold;
+*/
+
+/*  
+    ?----- footer
+*/
+.footer{
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+
+    .container{
+        width: 100%;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        overflow: hidden;
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(14, 26, 105, .4);
+        }
+
+        img{
+            min-width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-inner {
+        width: 100%;
+        display: inline-flex;
+        flex-direction: column;
+
+        @include ipadpro {
+            padding: 0 2rem;
+        }
+    }
+
+    /* footer footer-entry */
+    &-entry {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        padding-top: calc((100vw / 1600) * 100); //10rem
+        padding-bottom: calc((100vw / 1600) * 100); //10rem
+
+        h3 {
+            color: #fff;
+            font-size: 4.7rem;
+            font-weight: bold;
+            font-family: A1MinchoStdBold;
+            margin-right: auto;
+            min-width: 40%;
+            span {
+                font-size: 4rem;
+            }
+
+            p {
+                font-family: 'baron';
+                color: #fff;
+                font-weight: normal;
+            }
+            .h3-entry {
+                font-size: 2.5rem;
+                
+            }
+
+            .h3-caption {
+                font-size: 1.6rem;
+                letter-spacing: .85rem;
+            }
+        }
+        
+        .footer-button {
+            outline: none !important;
+            border: .2rem solid #fff;
+            width: 100%;
+            max-width: 31.2rem;
+            height: 7rem;
+            background-color: transparent;
+            color: #fff;
+            font-size: 2rem;;
+            font-family: baron;
+
+            span {
+                font-family: 'Noto Sans JP', sans-serif;
+            }
+            
+        }
+    }
+    
+    /* footer footer-enpage */
+    &-end-page{
+        width: 100%;
+        background-color: #0c2342; 
+        
+        @include ipadpro{
+            padding: 0 2rem;
+        }
+    
+        ul{
+            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            height: 6.5rem;
+            
+            li{
+                font-size: 1.6rem;
+                color: #fff;
+                font-family: 'Noto Sans JP', sans-serif;
+                text-decoration: none !important;
+                
+                &:hover {
+                    opacity: .8;
+                }
+
+                &:last-child{
+                    margin-left: auto;
+                }
+            }
+        }
+        
+        
+        
+    }
+
+}
