@@ -300,6 +300,12 @@
   }
 }
 
+.message__container .message__wrap li {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 500;
+}
+
 .message__img {
   position: relative;
 }
