@@ -82,7 +82,7 @@
                font-size: 3rem;
             }
 
-            span {
+            span:nth-of-type(2){
                 font-size: 2rem;
 
                 @media only screen and (max-width: 767px){
@@ -90,22 +90,24 @@
                 }
             }
 
-            p {
+            .h3-caption,
+            .h3-entry{
                 font-family: 'baron';
                 color: #fff;
                 font-weight: normal;
-
+                display: block;
                 
 
             }
             .h3-entry {
                 font-size: 2.5rem;
-                
+                margin-bottom: 1.5rem;
             }
 
             .h3-caption {
                 font-size: 1.6rem;
                 letter-spacing: .85rem;
+                margin-top: 2rem;
 
                 @media only screen and (max-width: 767px){
                     letter-spacing: .1rem;

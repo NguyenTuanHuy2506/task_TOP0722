@@ -67,6 +67,10 @@ body > main {
   }
 }
 
+.d-none {
+  display: none;
+}
+
 /*
     ?------- entry button
 */
