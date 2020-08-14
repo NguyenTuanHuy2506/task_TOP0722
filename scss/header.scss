@@ -21,6 +21,11 @@
     left: 0;
     height: 13.2rem;
     z-index: 1030;
+    transition: all .3s ease;
+
+    &.active{
+        background-color: #fff;
+    }
 
     @include ipadpro{
         height: 8rem;
@@ -76,7 +81,29 @@
         display: flex;
 
         &.active{
-            display: inline-flex;
+
+            @include ipadpro{
+                display: inline-flex;
+                position: fixed;
+                top: 8rem;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(#333, .9);
+                flex-direction: column;
+                // flex-wrap: wrap;
+                padding: 2rem;
+                overflow-y: auto;
+
+                .header__menu{
+                    display: inline-flex;
+                }
+            }
+
+            @include mobile{
+                top: 6rem;
+            }
+            
         }
         
         @include ipadpro {
@@ -99,5 +126,20 @@
 
     &__menu{
         display: none;
+
+        &.active{
+            
+            @media only screen and (min-width: 1025px) {
+                position: fixed;
+                top: 13.2rem;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(#333, .9);
+                display: inline-flex;
+                padding: 2rem ;
+            }
+        }
+        
     }
 }
