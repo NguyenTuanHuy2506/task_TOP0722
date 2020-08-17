@@ -701,7 +701,7 @@
             flex-direction: column;
             padding-left: 12rem;
             position: absolute;
-            top: 16.5vw;
+            top: calc(16.5vw + (100vw - 1600px)/5);
             left: 7.5vw;
 
             @include ipadpro{
