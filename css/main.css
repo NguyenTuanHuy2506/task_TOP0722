@@ -116,6 +116,11 @@
 @media only screen and (max-width: 767px) {
   .mv__img img {
     height: 100%;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 767px) and (-ms-high-contrast: active), only screen and (max-width: 767px) and (-ms-high-contrast: none) {
+  .mv__img img {
     width: auto;
   }
 }
@@ -235,7 +240,7 @@
 .message__container .message__sub-title {
   margin-top: 2.3rem;
   color: #296bc1;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 3rem;
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -254,6 +259,7 @@
   font-size: 1.6rem;
   color: #333;
   font-weight: 500;
+  font-family: "Noto Sans JP", sans-serif;
 }
 .message__img {
   position: relative;
@@ -419,7 +425,7 @@
 }
 .message-view__item1 > div ul li:nth-of-type(2) {
   font-size: 3.1rem;
-  font-weight: bold;
+  font-weight: 500;
   margin-right: 0.5rem;
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -447,7 +453,7 @@
 }
 .message-view__item2 > div ul li:nth-of-type(2) {
   font-size: 3.1rem;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Noto Sans JP", sans-serif;
   margin-top: 0.5rem;
 }
@@ -458,7 +464,7 @@
 }
 .message-view__title {
   font-size: 3.1rem;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 2rem;
   color: #3671c4;
   text-align: center;
@@ -605,6 +611,7 @@
   font-family: "Noto Sans JP", sans-serif;
   color: #fff;
   z-index: 12;
+  font-weight: 500;
 }
 .work .view-infor-button {
   margin-top: 6.7rem;
@@ -633,6 +640,11 @@
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 767px) and (-ms-high-contrast: active), only screen and (max-width: 767px) and (-ms-high-contrast: none) {
+  .people > ul {
+    display: block;
+  }
+}
 .people > ul .people__container {
   width: 100%;
   max-width: 50rem;
@@ -648,6 +660,7 @@
 }
 @media screen and (max-width: 1024px) {
   .people > ul .people__container {
+    top: calc(16.5vw + (100vw - 1024px)/5);
     max-width: 36rem;
     height: 30rem;
     padding-left: 5rem;
@@ -658,6 +671,7 @@
   .people > ul .people__container {
     position: static;
     padding: 0 2rem;
+    max-width: 100%;
   }
 }
 .people > ul .people__img {
@@ -722,6 +736,7 @@
   color: #fff;
   font-size: 3rem;
   font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
   padding-left: 7rem;
   display: flex;
   align-items: center;
@@ -792,6 +807,7 @@
   color: #fff;
   font-size: 2rem;
   font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -826,6 +842,11 @@
 .recruit .obj-decoration--cruit img {
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .recruit .obj-decoration--cruit img {
+    width: auto;
+  }
 }
 .recruit .heading .sub-heading {
   margin-top: 1.5rem;
@@ -863,6 +884,7 @@
   color: #fff;
   font-size: 2.5rem;
   font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
 }
 .recruit .apply li button:hover {
   opacity: 0.5;
@@ -901,6 +923,7 @@
   top: 0;
   left: 0;
   width: calc((100vw - 1600px)/2 + 421px);
+  min-width: 12rem;
   bottom: 0;
   background-color: #3673c5;
   transition: all 0.3s ease;
@@ -989,6 +1012,11 @@
   padding-right: 5.2rem;
   padding-top: 3.5rem;
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .news-wrap .virtual {
+    padding-right: 0 !important;
+  }
+}
 @media screen and (max-width: 1024px) {
   .news-wrap .virtual {
     padding-right: 2rem;
@@ -1007,6 +1035,7 @@
   color: #fff;
   font-size: 2rem;
   font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
   position: relative;
   padding-top: 1.8rem;
   padding-bottom: 1.8rem;
@@ -1079,6 +1108,7 @@
   content: attr(data-content);
   position: absolute;
   font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
   font-size: 1.6rem;
   color: #fff;
   top: 50%;
