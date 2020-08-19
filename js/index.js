@@ -63,7 +63,7 @@ $('.hambuger-button').click(function(){
 	if(_menuOpen == 0)
 	{
 		if(!_this.hasClass('active')){
-            console.log('aasd');
+
             _ww < 1025 ? _menu.addClass('active').addClass('bounceInLeft') : _submenu.addClass('active').addClass('bounceInLeft');
 
             _this.addClass('active');
@@ -78,7 +78,7 @@ $('.hambuger-button').click(function(){
 	}
 	else{
 		if(_this.hasClass('active')){
-			console.log('123213asd');
+
             _ww < 1025 ?_menu.addClass('bounceOutLeft') : _submenu.addClass('bounceOutLeft');
             
 			delayF(function(){
